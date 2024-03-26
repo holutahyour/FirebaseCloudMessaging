@@ -9,7 +9,7 @@ public class FirebaseNotificationHub
     {
         FirebaseApp.Create(new AppOptions()
         {
-            Credential = GoogleCredential.FromFile("private_key.json")
+            Credential = GoogleCredential.FromJson(Private.DecodeKey())
         });
     }
 
